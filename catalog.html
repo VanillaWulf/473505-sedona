@@ -22,9 +22,50 @@
     <main class =container>
       <h1 class="visualy-hidden">Каталог</h1>
 
-      <section class="filters" style="background-image: url(img/background-photo.png); width:80%; height: 200px;">
+      <section class="filter" style="background-image: url(img/background-photo.png); width:80%; height: 450px;">
         <h2 class="visually-hidden">Фильтры для отелей</h2>
-        <!--здесь будет форма-->
+        <form class="filter-hotel" action="#" method="get">
+          <fieldset>
+            <legend>Инфрастурктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimming-pool" id="swimming-pool"checked>
+                <label for="swimming-pool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="wi-fi" name="wi-fi">
+                <label for="wi-fi">Wi-fi</label>
+               </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостинница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="apartments" checked>
+                <label for="apartments">Аппартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимоть в сутки (Р):</legend>
+
+            <input type="range" min="0" max="4000" id="price" name="price">
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="catalog-sort">
@@ -39,8 +80,8 @@
         </ul>
       </div>
         <div class="sort-image">
-          <img src="img\icon-down-dir.svg" alt="сортировка вниз" width="11" height="11">
-          <img src="img\icon-up-dir.svg" alt="сортировка вверх" width="11" height="11">
+          <button class="button sort-down" type="button"><!--беграунд - svg img\icon-down-dir.svg--></<button>
+          <button class="button sort-up" type="button"><!--беграунд - svg img\icon-up-dir.svg--></<button>
         </div>
       </section>
 
@@ -50,7 +91,7 @@
             <h3><a href="catalog-item.html">Amara resort & spa</a></h3>
             <a href="#">
                 <img src="img/hotel-1.jpg" alt="Amara resort & spa" widht="135" height="90"> <!--указать размеры и alt-->
-              </a>
+            </a>
             <div class="features-description">
             <span>Гостиница</span>
             <span>от 4000 р.</span>
@@ -116,9 +157,9 @@
       </div>
       <div class="social">
         <ul>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">fb</a></li>
-        <li><a href="#">vk</a></li>
+          <li><a href="#" aria-label="Twitter"></a></li>
+          <li><a href="#" aria-label="Facebook"></a></li>
+          <li><a href="#" aria-label="Вконтакте"></a></li>
       </ul>
       </div>
       <div class="copyrights">
