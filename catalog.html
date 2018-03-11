@@ -61,8 +61,14 @@
           </fieldset>
           <fieldset>
             <legend>Стоимоть в сутки (Р):</legend>
-
-            <input type="range" min="0" max="4000" id="price" name="price">
+            <div class="price-value">
+              <label for="min-price" class="visually-hidden">Минимальная цена</label>
+              <input type="text" name="min-price" id="min-price" value="" placeholder="от 0">
+              <label for="max-price" class="visually-hidden">Максимальная цена</label>
+              <input type="text" name="max-price" id="max-price" value="" placeholder="до 3000">
+            </div>
+            <label for="price" class="visually-hidden">Диапазон цен</label>
+            <input type="range" min="0" max="4000" step="1000" id="price" name="price">
           </fieldset>
           <button class="button" type="submit">Показать</button>
         </form>
@@ -72,13 +78,13 @@
         <h2 class="visually-hidden">Сортировка по каталогу</h2>
         <p> Найдено: 3 </p>
         <div class="sort-list">
-        <span>Сортировка</span>
-        <ul>
-          <li class="sort-item"><button class="active">По цене</button></li>
-          <li class="sort-item"><button>По типу</button></li>
-          <li class="sort-item"><button>По рейтингу</button></li>
-        </ul>
-      </div>
+          <span>Сортировка</span>
+          <ul>
+            <li class="sort-item"><button class="active">По цене</button></li>
+            <li class="sort-item"><button>По типу</button></li>
+            <li class="sort-item"><button>По рейтингу</button></li>
+          </ul>
+        </div>
         <div class="sort-image">
           <button class="button sort-down" type="button"><!--беграунд - svg img\icon-down-dir.svg--></<button>
           <button class="button sort-up" type="button"><!--беграунд - svg img\icon-up-dir.svg--></<button>
@@ -90,30 +96,30 @@
           <li class="catalog-item">
             <h3><a href="catalog-item.html">Amara resort & spa</a></h3>
             <a href="#">
-                <img src="img/hotel-1.jpg" alt="Amara resort & spa" widht="135" height="90"> <!--указать размеры и alt-->
+                <img src="img/hotel-1.jpg" alt="Amara resort & spa" widht="135" height="90">
             </a>
             <div class="features-description">
-            <span>Гостиница</span>
-            <span>от 4000 р.</span>
-            <div class="rating">
-              <img src="img/star.svg" alt="Звезда" width="14" height="21">
-              <img src="img/star.svg" alt="Звезда" width="14" height="21">
-              <img src="img/star.svg" alt="Звезда" width="14" height="21">
-              <img src="img/star.svg" alt="Звезда" width="14" height="21">
-              <!--сделать бэкграунд с репитом-->
-              <p>Рейтинг: 8,5
-            </div>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+              <span>Гостиница</span>
+              <span>от 4000 р.</span>
+              <div class="rating">
+                <img src="img/star.svg" alt="Звезда" width="14" height="21">
+                <img src="img/star.svg" alt="Звезда" width="14" height="21">
+                <img src="img/star.svg" alt="Звезда" width="14" height="21">
+                <img src="img/star.svg" alt="Звезда" width="14" height="21">
+                <!--сделать бэкграунд с репитом-->
+                <p>Рейтинг: 8,5
+              </div>
+              <a class="button" href="#">Подробнее</a>
+              <a class="button" href="#">Забронировать</a>
           </div>
-          </li>
+        </li>
 
-          <li class="catalog-item">
-            <h3><a href="catalog-item.html">Desert Quail inn</a></h3>
-              <a href="#">
-                <img src="img/hotel-2.jpg" alt="Desert Quail inn" widht="135" height="90"> <!--указать размеры и alt-->
-              </a>
-            <div class="features-description">
+        <li class="catalog-item">
+          <h3><a href="catalog-item.html">Desert Quail inn</a></h3>
+          <a href="#">
+            <img src="img/hotel-2.jpg" alt="Desert Quail inn" widht="135" height="90">
+          </a>
+          <div class="features-description">
             <span>Мотель</span>
             <span>от 3000 р.</span>
             <div class="rating">
@@ -126,14 +132,14 @@
             <a class="button" href="#">Подробнее</a>
             <a class="button" href="#">Забронировать</a>
           </div>
-          </li>
+        </li>
 
-          <li class="catalog-item">
-            <h3><a href="catalog-item.html">Villas at poco diablo</a></h3>
-            <a href="#">
-                <img src="img/hotel-3.jpg" alt="Villas at poco diablo" widht="135" height="90"> <!--указать размеры и alt-->
-              </a>
-            <div class="features-description">
+        <li class="catalog-item">
+          <h3><a href="catalog-item.html">Villas at poco diablo</a></h3>
+          <a href="#">
+            <img src="img/hotel-3.jpg" alt="Villas at poco diablo" widht="135" height="90">
+          </a>
+          <div class="features-description">
             <span>Апартаменты</span>
             <span>от 2000 р.</span>
             <div class="rating">
@@ -145,11 +151,11 @@
             <a class="button" href="#">Подробнее</a>
             <a class="button" href="#">Забронировать</a>
           </div>
-          </li>
+        </li>
 
-        </ul>
-      </section>
-    </main>
+      </ul>
+    </section>
+</main>
 
     <footer class="main-footer">
       <div class="tag">
@@ -157,9 +163,10 @@
       </div>
       <div class="social">
         <ul>
-          <li><a href="#" aria-label="Twitter"></a></li>
-          <li><a href="#" aria-label="Facebook"></a></li>
-          <li><a href="#" aria-label="Вконтакте"></a></li>
+          <li><a href="#" aria-label="Twitter">Twitter</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Вконтакте">Вконтакте</a></li>
+          <!--убрать текст для ссылок, сделать для них состояние focus в css-->
       </ul>
       </div>
       <div class="copyrights">
