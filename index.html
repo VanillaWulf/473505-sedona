@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -21,11 +24,11 @@
     </header>
     <main class="container">
 
-      <section class="main-image" style="width:80%; height: 773px;">
-        <div style="background-image: url(img/background-photo.jpg); width:100%; height: 100%;">
-        <img src="img/Welcome.png" alt="Sedona" width="458" height="352">
+      <section class="main-image">
+        <h2 class="visually-hidden">Изображение гор</h2>
+        <img class="main-image-text" src="img/Welcome.png" alt="Sedona" width="458" height="352">
+        <div class="main-image-border">
         </div>
-      <!--нижняя рамка-->
       </section>
 
       <section class="headers">
@@ -71,7 +74,7 @@
         <h3 class="visually-hidden">Преимущества 2-5</h3>
         <div class="first-part">
           <div class="description">
-            <h3 class="feature-name">Настоящий городок</h3>
+            <h3 class="feature-name">Там есть мост дьявола</h3>
             <p class="feature-content">— №2 —</p>
             <p class="feature-content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
@@ -79,7 +82,7 @@
             </div>
         </div>
           <div class="second-part">
-            <ul class="features-list">
+            <ul class="feature-list">
               <li class="fearutes-items">
                 <h3 class="feature-name">Небольшая площадь</h3>
                 <p class="feature-content">— №3 —</p>
@@ -103,14 +106,12 @@
       <section class="modal-find-title">
         <h2>Заинтерисовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button>Поиск гостиницы в седоне</button>
+        <button class="button modal-open" type="button">Поиск гостиницы в седоне</button>
         </section>
 
       <section class="map">
           <h2 class="visually-hidden">Карта</h2>
-          <div style="background-image: url(img/map.jpg); width:80%; height: 450px;">
-          </div>
-        </section>
+      </section>
 
     </main>
     <footer class="main-footer">
@@ -118,7 +119,7 @@
         <p>#visitsedona</p>
       </div>
       <div class="social">
-        <ul>
+        <ul class="social-list">
           <li><a href="#" aria-label="Twitter">Twitter</a></li>
           <li><a href="#" aria-label="Facebook">Facebook</a></li>
           <li><a href="#" aria-label="Вконтакте">Вконтакте</a></li>
@@ -136,32 +137,32 @@
         <div class="find-hotel-group">
           <label for="date-in">Дата заезда</label>
           <div class="date-input">
-            <input type="text" name="date-in" value="" id="date-in" placeholder="24 апреля 2017">
+            <input type="text" name="date-in" id="date-in" value="24 апреля 2017">
             <button class="button date-ico" type="button"><!--беграунд - svg календаря--></button>
           </div>
         </div>
         <div class="find-hotel-group">
           <label for="date-out">Дата отъезда</label>
           <div class="date-input">
-            <input type="text" name="date-out" value="" id="date-out" placeholder="4 июля 2017">
+            <input type="text" name="date-out" id="date-out" value="4 июля 2017">
             <button class="button date-ico" type="button"></button>
           </div>
         </div>
         <div class="find-hotel-group person">
-          <label for="grown-ups">Взрослые</label>
+          <label for="grown-ups">Взрослые:</label>
           <div class="person-input">
             <button class="button plus" type="button">+</button>
-            <input type="text" name="grown-ups" id="grown-ups" value="" placeholder="2">
+            <input type="text" name="grown-ups" id="grown-ups" value="2">
             <button class="button minus" type="button">-</button>
           </div>
-          <label for="children">Дети</label>
+          <label for="children">Дети:</label>
           <div class="person-input">
             <button class="button plus" type="button">+</button>
-            <input type="text" name="children" id="children" value="" placeholder="0">
+            <input type="text" name="children" id="children" value="0">
             <button class="button minus" type="button">-</button>
           </DIV>
         </div>
-        <button class="button" type="submit">Найти</button>
+        <button class="button modal-find-start" type="submit">Найти</button>
       </form>
     </section>
 

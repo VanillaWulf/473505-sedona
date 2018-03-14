@@ -1,0 +1,385 @@
+body{
+  margin: 0;
+  padding: 0;
+
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/*поработать над бэкграундом*/
+.main-image{
+  background-image: url('../img/background-photo.jpg');
+  background-color: rgb(129,179,210);
+  width: 1200px;
+  height: 750px;
+  background-position: center;
+  background-repeat:no-repeat;
+  position: relative;
+  /*сделать обрезку фона*/
+}
+
+.filter{
+  background-image: url('../img/background-photo.jpg');
+  background-color: rgb(129,179,210);
+  width: 1200px;
+  height: 450px;
+  background-position: center;
+  background-repeat:no-repeat;
+  /*сделать обрезку фона и blur*/
+  }
+
+.main-image-border{
+  background-image: url('../img/background-white-1200.png');
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  }
+
+.headers{
+  background-color: rgb(255,255,255);
+}
+
+h1{
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+
+h2{
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.headers p{
+  line-height: 26px;
+  text-align: center;
+  font-weight: 400;
+}
+
+a{
+  text-decoration: none;
+}
+
+.site-navigation{
+  line-height: 26px;
+  background-color: rgb(255,255,255);
+  list-style: none;
+}
+
+.site-navigation a{
+  color: #000000;
+}
+
+.site-navigation a:focus,
+.site-navigation a:hover{
+  color: rgb(129,179,210);
+}
+
+.site-navigation a:active{
+  color: rgba(0,0,0);
+}
+
+.site-navigation-current a{
+  color: rgba(118,99,87);
+}
+
+.feature-list{
+  list-style: none;
+}
+
+.fearutes-items{
+  text-align: center;
+}
+
+.feature-name{
+  font-size: 21px;
+}
+
+.feature-content{
+  font-weight: 400;
+}
+
+.feature-one .description,
+.feature-two .description{
+  background-color: rgb(129,179,210);
+  text-align: center;
+  color: rgb(255,255,255);
+}
+
+.feature-two{
+  background-color: rgb(238,238,238);
+}
+
+.modal-find-title p{
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.modal-open{
+  font: inherit;
+  line-height: 26px;
+  font-size: 21px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgb(118,99,87);
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+  border: none;
+}
+
+.modal-open:focus,
+.modal-open:hover {
+  background-color: rgb(96,78,67);
+}
+
+.modal-open:active{
+  background-color: rgb(80,62,51);
+  color: rgba(255,255,255,0.3);
+}
+
+.modal input{
+  font: inherit;
+  /*color: black;*/
+  text-transform: uppercase;
+  border: none;
+  background-color: rgb(238,238,238);
+  cursor: pointer;
+}
+
+.modal input:hover{
+  background-color: rgb(235,235,235);
+}
+
+.modal input:focus{
+  background-color: rgb(255,255,255);
+  border-color: rgb(255,255,255);
+}
+
+.date-input,
+.person-input{
+  background-color: rgb(238,238,238);
+  border: none;
+}
+
+.modal-find-start{
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgb(129,179,210);
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+  border: none;
+}
+
+.modal-find-start:focus,
+.modal-find-start:hover {
+  background-color: rgb(102,158,192);
+}
+
+.modal-find-start:active{
+  background-color: rgb(84,150,189);
+  color: rgba(255,255,255,0.3);
+}
+
+.map{
+  background-image: url('../img/map.jpg');
+  width: 1200px;
+  height: 593px;
+  background-repeat: no-repeat;
+}
+
+.tag{
+  line-height: 26px;
+  font-weight: 21px;
+  text-align: center;
+}
+
+/*footer*/
+
+.social{
+  text-align: center;
+}
+
+.social-list{
+  list-style:none;
+}
+
+.copyrights{
+  line-height: 26px;
+  text-align: center;
+}
+
+/*catalog*/
+
+.filter {
+  color: rgb(255,255,255);
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter-list{
+  list-style: none;
+}
+
+legend{
+  font-size: 16px;
+}
+
+.filter-option{
+  font-weight: 400;
+}
+
+.price-value input{
+  font: inherit;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgb(255,255,255);
+  background-color: rgba(0,0,0,0);
+  border: none;
+  cursor: pointer;
+}
+
+.price-value input:focus,
+.price-value input:active{
+  border: none;
+}
+
+.price-value{
+  border: 2px solid rgb(255,255,255);
+}
+
+.filter-show{
+  font: inherit;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(0,0,0,0);
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+  border: 2px solid rgb(255,255,255);
+}
+
+.filter-show:focus,
+.filter-show:hover {
+  background-color: rgb(255,255,255);
+  color: rgb(0,0,0);
+}
+
+.catalog-sort p{
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.catalog-sort span{
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.catalog-sort-list,
+.catalog-list{
+  list-style: none;
+}
+
+.sort-list-item{
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  border-bottom: 1px dotted rgb(129,179,210);
+  color: rgb(177,177,177);
+}
+
+.sort-list-item:focus{
+  color: rgb(129,179,210);
+  border: none;
+}
+
+.sort-list-item:hover{
+  color: rgb(129,179,210);
+}
+
+.sort-list-item:active{
+  color: rgb(0,0,0);
+  border: none;
+}
+
+.catalog-item-title{
+  font-size: 21px;
+  line-height: 26px;
+  color: rgb(0,0,0);
+}
+
+.catalog-item-title:hover{
+  color: rgb(129,179,210);
+}
+
+.catalog-item-title:active{
+  color: rgb(0,0,0,0.3);
+}
+
+.features-description span{
+  font-weight: 400;
+}
+
+.features-description a{
+  font-weight: 400;
+  color: rgb(255,255,255);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button-description{
+  background-color: rgb(129,179,210);
+}
+
+.button-description:hover{
+  background-color: rgb(102,158,192);
+}
+
+.button-description:active{
+  background-color: rgb(84,150,189);
+  color: rgba(255,255,255,0.3);
+}
+
+.button-booking{
+  background-color: rgb(118,99,87);
+}
+
+.button-booking:hover{
+  background-color: rgb(96,78,67);
+}
+
+.button-booking:active{
+  background-color: rgb(80,62,51);
+  color: rgba(255,255,255,0.3);
+}
+
+.rating-sum{
+  font-weight: 400;
+  background-color: rgb(242,242,242);
+  color: rgb(102,102,102);
+}
+
+.rating-stars{
+  width: 73px;
+  height: 17px;
+  background-image: url('../img/star.svg');
+  background-repeat: repeat;
+}
+
+.second-item{
+  width: 55px;
+}
+
+.third-item{
+  width: 35px;
+}
