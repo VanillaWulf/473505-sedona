@@ -44,13 +44,13 @@ body{
   background-color: rgb(255,255,255);
 }
 
-h1{
+.main-header{
   font-size: 21px;
   line-height: 21px;
   text-align: center;
 }
 
-h2{
+.modal-find-header{
   font-size: 36px;
   line-height: 36px;
   text-align: center;
@@ -198,7 +198,7 @@ a{
 
 .tag{
   line-height: 26px;
-  font-weight: 21px;
+  font-size: 21px;
   text-align: center;
 }
 
