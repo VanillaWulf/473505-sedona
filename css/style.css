@@ -44,7 +44,7 @@ body{
   background-color: rgb(255,255,255);
 }
 
-.main-header{
+.header{
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -361,25 +361,4 @@ legend{
 .button-booking:active{
   background-color: rgb(80,62,51);
   color: rgba(255,255,255,0.3);
-}
-
-.rating-sum{
-  font-weight: 400;
-  background-color: rgb(242,242,242);
-  color: rgb(102,102,102);
-}
-
-.rating-stars{
-  width: 73px;
-  height: 17px;
-  background-image: url('../img/star.svg');
-  background-repeat: repeat;
-}
-
-.second-item{
-  width: 55px;
-}
-
-.third-item{
-  width: 35px;
 }
