@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-
+  background-color: rgb(242,242,242);
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -15,11 +15,15 @@ body{
   background-image: url('../img/background-photo.jpg');
   background-color: rgb(129,179,210);
   width: 1200px;
-  height: 750px;
+  height: 510px;
   background-position: center;
   background-repeat:no-repeat;
   position: relative;
   /*сделать обрезку фона*/
+}
+
+.main-header{
+  background-color: rgb(255,255,255);
 }
 
 .filter{
@@ -40,13 +44,9 @@ body{
   height: 55px;
   }
 
-.headers{
-  background-color: rgb(255,255,255);
-}
-
 .header{
   font-size: 21px;
-  line-height: 21px;
+  line-height: 26px;
   text-align: center;
 }
 
@@ -66,9 +66,13 @@ a{
   text-decoration: none;
 }
 
+.main-header{
+  background-color: rgb(255,255,255);
+  }
+
 .site-navigation{
   line-height: 26px;
-  background-color: rgb(255,255,255);
+  /*background-color: rgb(255,255,255);*/
   list-style: none;
 }
 
@@ -110,10 +114,14 @@ a{
   background-color: rgb(129,179,210);
   text-align: center;
   color: rgb(255,255,255);
+  width: 400px;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 .feature-two{
   background-color: rgb(238,238,238);
+  /*padding-bottom: 65px;*/
 }
 
 .modal-find-title p{
@@ -361,4 +369,130 @@ legend{
 .button-booking:active{
   background-color: rgb(80,62,51);
   color: rgba(255,255,255,0.3);
+}
+
+.visually-hidden{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  /*расширить*/
+}
+
+/*Сеточные стили*/
+html,
+body{
+  min-width: 1200px;
+  min-height: 1750px;
+}
+
+.main-header{
+  position: relative;
+  height: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+/*  padding-left: 70px;
+  padding-right: 70px;*/
+}
+
+.main-header-logo{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  transform: translateX(-50%);
+  left: 50%;
+
+  }
+
+.site-navigation {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  margin: 0;
+  text-align: center;
+  vertical-align: center;
+
+}
+
+.site-navigation-item{
+  width:20%;
+}
+
+.site-navigation-item:nth-child(2){
+  margin-right: 240px;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(255,255,255);
+}
+
+.main-image{
+  margin-bottom: 60px;
+}
+
+.header{
+  margin-bottom: 30px;
+}
+
+.headers{
+  margin-bottom: 50px;
+  text-align: center;
+  min-width: 580px;
+  padding-left: 310px;
+  padding-right: 310px;
+}
+
+.first-part-city{
+  display: flex;
+  /*margin-bottom: 60px;*/
+}
+
+
+.first-part-image-city{
+  width: 800px;
+  background-image: url('../img/city.jpg');
+}
+
+.first-part-image-mountain{
+  width: 800px;
+  background-image: url('../img/mountain.jpg');
+}
+
+.feature-name{
+  margin-bottom: 30px;
+}
+
+.feature-content{
+  margin-bottom: 20px;
+}
+
+.feature-list{
+  display: flex;
+  padding: 0;
+  margin:0;
+}
+
+.fearutes-items{
+  width: 400px;
+}
+
+.fearutes-items{
+  padding: 50px;
+}
+
+.first-part-mountain{
+  display: flex;
+  margin-bottom: 0px;
+
+}
+
+.fearutes-ico{
+  margin-bottom: 20px;
+}
+
+.fearutes-items{
+  padding: 50px;
 }

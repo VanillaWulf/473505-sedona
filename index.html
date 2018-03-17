@@ -8,20 +8,21 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
     <header class="main-header">
+      <a class="main-header-logo">
+        <img src="img/logo.png" alt="Логотип Sedona" width="138" height="70">
+      </a>
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo.png" alt="Логотип Sedona" width="138" height="70">
-        </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="media.html">Фото и видео</a></li>
-          <li><a href="price.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <li class="site-navigation-item"><a href="info.html">Информация</a></li>
+          <li class="site-navigation-item"><a href="media.html">Фото и видео</a></li>
+          <li class="site-navigation-item"><a href="price.html">Карта штата</a></li>
+          <li class="site-navigation-item"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main>
 
       <section class="main-image">
         <h2 class="visually-hidden">Изображение гор</h2>
@@ -39,31 +40,37 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <section class="feature-one">
         <h3 class="visually-hidden">Преимущество 1</h3>
-        <div class="first-part">
+        <div class="first-part-city">
           <div class="description">
-            <h3 class="feature-name">Настоящий городок</h3>
+            <h3 class="feature-name">Настоящий <br> городок</h3>
             <p class="feature-content">— №1 —</p>
-            <p class="feature-content">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+            <p class="feature-content">Седона — не аттракцион для туристов,<br> там течет своя жизнь</p>
           </div>
-          <div class="image" style="background-image: url(img/city.jpg); width:52%; height: 200px;">
-            </div>
+          <div class="first-part-image-city">
+          </div>
       </div>
       <div class="second-part">
         <ul class="feature-list">
           <li class="fearutes-items">
-          <img src="img/icon-1.svg" alt="Жилье" width="74" height="70">
+            <div class="fearutes-ico">
+              <img src="img/icon-1.svg" alt="Жилье" width="74" height="70">
+            </div>
           <h3 class="feature-name">Жилье</h3>
           <p class="feature-content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="fearutes-items">
-            <img src="img/icon-2.svg" alt="Еда" width="74" height="70">
+            <div class="fearutes-ico">
+              <img src="img/icon-3.svg" alt="Еда" width="74" height="70">
+            </div>
             <h3 class="feature-name">Еда</h3>
-            <p class="feature-content">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            <p class="feature-content">Всегда заказывайте фирменный бургер,<br> Вы не разочаруетесь!</p>
           </li>
           <li class="fearutes-items">
-            <img src="img/icon-3.svg" alt="Сувениры" width="74" height="70">
+            <div class="fearutes-ico">
+              <img src="img/icon-2.svg" alt="Сувениры" width="74" height="70">
+            </div>
             <h3 class="feature-name">Сувениры</h3>
-            <p class="feature-content">Не только китайского, но и местного производства!</p>
+            <p class="feature-content">Не только китайского, но и местного<br> производства!</p>
           </li>
         </ul>
       </div>
@@ -71,31 +78,31 @@
 
       <section class="feature-two">
         <h3 class="visually-hidden">Преимущества 2-5</h3>
-        <div class="first-part">
+        <div class="first-part-mountain">
+            <div class="first-part-image-mountain">
+            </div>
           <div class="description">
-            <h3 class="feature-name">Там есть мост дьявола</h3>
+            <h3 class="feature-name">Там есть<br> мост дьявола</h3>
             <p class="feature-content">— №2 —</p>
             <p class="feature-content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
-          <div class="image" style="background-image: url(img/mountain.jpg); width:52%; height: 200px;">
-            </div>
         </div>
           <div class="second-part">
             <ul class="feature-list">
               <li class="fearutes-items">
-                <h3 class="feature-name">Небольшая площадь</h3>
+                <h3 class="feature-name">Небольшая<br> площадь</h3>
                 <p class="feature-content">— №3 —</p>
-                <p class="feature-content">Все достопримечательности находятся очень близко</p>
+                <p class="feature-content">Все достопримечательности<br> находятся очень близко</p>
               </li>
               <li class="fearutes-items">
-                <h3 class="feature-name">Красивая дорога</h3>
+                <h3 class="feature-name">Красивая<br> дорога</h3>
                 <p class="feature-content">— №4 —</p>
-                <p class="feature-content">Ехать в седону из лас-вегаса совсем не скучно!</p>
+                <p class="feature-content">Ехать в седону из лас-вегаса совсем<br> не скучно!</p>
               </li>
               <li class="fearutes-items">
-                <h3 class="feature-name">Мало туристов</h3>
+                <h3 class="feature-name">Мало<br> туристов</h3>
                 <p class="feature-content">— №5 —</p>
-                <p class="feature-content">Большинство едет в гранд каньон и толпится там</p>
+                <p class="feature-content">Большинство едет в гранд каньон и<br> толпится там</p>
               </li>
             </ul>
           </div>
@@ -164,6 +171,6 @@
         <button class="button modal-find-start" type="submit">Найти</button>
       </form>
     </section>
-
+  </div>
   </body>
 </html>
