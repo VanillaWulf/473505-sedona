@@ -573,7 +573,7 @@ fieldset{
 }
 
 .filter-show,
-modal-find-start{
+.modal-find-start{
   cursor: pointer;
   position: absolute;
   transform: translateX(50%);
