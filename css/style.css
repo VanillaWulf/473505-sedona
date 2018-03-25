@@ -18,8 +18,6 @@ body{
   background-color: rgb(129,179,210);
   width: 1200px;
   height: 510px;
-  background-position: center;
-  background-repeat:no-repeat;
   position: relative;
 }
 
@@ -28,7 +26,6 @@ body{
 }
 
 .filter{
-  position: relative;
   background-color: rgb(129,179,210);
   width: 1200px;
   height: 220px;
@@ -37,17 +34,6 @@ body{
   background-repeat:no-repeat;
   /*сделать обрезку фона и blur*/
   }
-
-.backgound-catalog{
-  position: absolute;
-  background-image: url('../img/background_photo-1200.jpg');
-  background-position: center;
-  background-repeat:no-repeat;
-  filter: blur(3px);
-  top:center;
-  width: 1200px;
-  height: 220px;
-}
 
 .main-image-border{
   background-image: url('../img/background-white-1200.png');
@@ -233,11 +219,39 @@ a{
 
 .social{
   text-align: center;
+  height:47px;
 }
 
 .social-list{
   list-style:none;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
 }
+
+.social-item{
+  display: inline-block;
+  width: 47px;
+  height: 47px;
+  background-color: rgb(129,179,210);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*flex-wrap: wrap;*/
+  margin-right: 5px;
+}
+
+.social-item:hover,
+.social-item:focus{
+  background-color: rgb(102,158,192);
+}
+
+.social-item:active svg{
+  opacity: 0.3;
+}
+
+
 
 .copyrights{
   line-height: 26px;
@@ -854,9 +868,13 @@ fieldset{
   padding-top:5px;
 }
 
-.catalog-item-card{
-  width: 780px;
+.catalog-item-column-card{
+  flex-grow: 1;
 }
+
+/*.catalog-item-card{
+  width: 780px;
+}*/
 
 .catalog-item-rating{
   text-align: right;
@@ -900,15 +918,33 @@ fieldset{
   width:570px;
   margin: auto;
   padding: 55px;
-  position: relative;
+  position: absolute;
   box-sizing: border-box;
   border: 1px solid black;
+  background-color: rgb(255,255,255);
+  top
   }
 
 .person-input{
   width: 110px;
 }
 
+.find-hotel-group input[type="text"{
+  width: 305px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+.person input[type="text"{
+  width: 305px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/*
 #grown-ups,
 #children{
   width: 42px;
@@ -922,7 +958,7 @@ fieldset{
   width: 305px;
   padding: 10px 10px;
 }
-
+*/
 .plus,
 .minus{
   width: 30px;
@@ -948,6 +984,12 @@ fieldset{
   color: rgb(129,179,210);
 }
 
+.modal-find input[type="text"] {
+  font: inherit;
+  color: rgb(0,0,0);
+  /*text-transform: uppercase;*/
+}
+
 .find-hotel-group{
   display: flex;
   margin-bottom: 25px;
@@ -958,31 +1000,4 @@ fieldset{
 .person{
   margin-bottom:55px;
   position: relative;
-}
-
-.social-list{
-  display: flex;
-  justify-content: center;
-  margin: 0px;
-  padding: 0px;
-}
-
-.social-item{
-  width: 47px;
-  height: 47px;
-  background-color: rgb(129,179,210);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-right: 5px;
-}
-
-.social-item:hover,
-.social-item:focus{
-  background-color: rgb(102,158,192);
-}
-
-.social-item:active svg{
-  opacity: 0.3;
 }
