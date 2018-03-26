@@ -944,12 +944,8 @@ body{
   fill: rgb(0,0,0);
 }
 
-.button-sort:hover path{
-  fill: rgb(0,0,0);
-}
-
 .button-sort:active path{
-  fill: rgb(177,177,177);
+  fill: rgb(129,179,210);
 }
 
 .catalog-list{
