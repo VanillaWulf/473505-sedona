@@ -120,22 +120,22 @@
             <form class="find-hotel" action="https://echo.htmlacademy.ru" method="post">
               <div class="find-hotel-group">
                 <label for="date-in">Дата заезда:</label>
-                <input class="date-input" type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
-                <a href="#" class="modal-find-calendar" aria-label="Календарь">
-                </a>
+                <input class="date-input" type="text" name="date-in" id="date_in" placeholder="24 апреля 2017">
+                <button class="modal-find-calendar">
+                </button>
               </div>
               <div class="find-hotel-group">
                 <label for="date-out">Дата выезда:</label>
-                  <input class="date-input" type="text" name="date-out" id="date-out" placeholder="4 июля 2017">
-                    <a href="#" class="modal-find-calendar" aria-label="Календарь">
-                    </a>
+                  <input class="date-input" type="text" name="date-out" id="date_out" placeholder="4 июля 2017">
+                  <button class="modal-find-calendar">
+                  </button>
                   </div>
               <div class="find-hotel-group person">
                 <div class="find-hotel-group-grown-ups">
                   <label for="grown-ups">Взрослые:</label>
                   <div class="person-input">
                     <button class="button minus" type="button">-</button>
-                    <input type="text" name="grown-ups" id="grown-ups" value="2">
+                    <input type="text" name="grown-ups" id="grown_ups" value="2">
                     <button class="button plus" type="button">+</button>
                   </div>
                 </div>
@@ -146,12 +146,52 @@
                     <input type="text" name="children" id="children" value="0">
                     <button class="button plus" type="button">+</button>
                   </div>
-                </div>  
+                </div>
               </div>
               <button class="button modal-find-start" type="submit">Найти</button>
             </form>
           </div>
       </section>
+      <script>
+
+      let modalAction=document.querySelector(".modal-open");
+      let modalState=document.querySelector(".modal-find")
+
+      modalAction.addEventListener("click", function (evt) {
+        console.log('click on show');
+        evt.preventDefault();
+        modalState.classList.toggle("state-open");
+      });
+
+      let dateIn=document.querySelector("[name=date-in]");
+      let dateOut=document.querySelector("[name=date-out]");
+
+      let grownUps=document.querySelector("[name=grown-ups]");
+      let children=document.querySelector("[name=children]");
+
+      let grownUpsPlus=document.querySelector(".find-hotel-group-grown-ups .plus");
+      let grownUpsMunis=document.querySelector(".find-hotel-group-grown-ups .minus")
+
+      grownUpsPlus.addEventListener("click", function (evt) {
+        console.log('+');
+        evt.preventDefault();
+        let grownUpsCounter = grown_ups.getAttribute('value');
+        for( 0 < parseInt(grownUpsCounter) < 50){
+           grown_ups.setAttribute('value', parseInt(grownUpsCounter)+1);
+          }
+        });
+      grownUpsMunis.addEventListener("click", function (evt) {
+        console.log('-');
+        evt.preventDefault();
+        let grownUpsCounter = grown_ups.getAttribute('value');
+        for( 0 < parseInt(grownUpsCounter) < 50){
+           grown_ups.setAttribute('value', parseInt(grownUpsCounter)-1);
+          }
+
+      });
+
+
+      </script>
     </main>
     <footer class="main-footer">
       <div class="tag">
