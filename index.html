@@ -115,19 +115,19 @@
 
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
-          <div class="modal modal-find">
+            <div class="modal modal-find">
             <h2 class="visually-hidden">Поиск отелей</h2>
             <form class="find-hotel" action="https://echo.htmlacademy.ru" method="post">
               <div class="find-hotel-group">
                 <label for="date-in">Дата заезда:</label>
                 <input class="date-input" type="text" name="date-in" id="date_in" placeholder="24 апреля 2017">
-                <button class="modal-find-calendar">
+                <button type="button" class="modal-find-calendar">
                 </button>
               </div>
               <div class="find-hotel-group">
                 <label for="date-out">Дата выезда:</label>
                   <input class="date-input" type="text" name="date-out" id="date_out" placeholder="4 июля 2017">
-                  <button class="modal-find-calendar">
+                  <button type="button" class="modal-find-calendar">
                   </button>
                   </div>
               <div class="find-hotel-group person">
@@ -135,7 +135,7 @@
                   <label for="grown-ups">Взрослые:</label>
                   <div class="person-input">
                     <button class="button minus" type="button">-</button>
-                    <input type="text" name="grown-ups" id="grown_ups" value="2">
+                    <input type="text" name="grown-ups" id="grown_ups" value="2" maxlength="2">
                     <button class="button plus" type="button">+</button>
                   </div>
                 </div>
@@ -143,7 +143,7 @@
                   <label for="children">Дети:</label>
                   <div class="person-input">
                     <button class="button minus" type="button">-</button>
-                    <input type="text" name="children" id="children" value="0">
+                    <input type="text" name="children" id="children" value="0" maxlength="2">
                     <button class="button plus" type="button">+</button>
                   </div>
                 </div>
@@ -151,47 +151,9 @@
               <button class="button modal-find-start" type="submit">Найти</button>
             </form>
           </div>
+          <iframe class="map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d593189.7263887121!2d-111.92397972251473!3d34.782254659355786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1522265208032" width="1200" height="595" frameborder="0" style="border:0" allowfullscreen>
+          </iframe>
       </section>
-      <script>
-
-      let modalAction=document.querySelector(".modal-open");
-      let modalState=document.querySelector(".modal-find")
-
-      modalAction.addEventListener("click", function (evt) {
-        console.log('click on show');
-        evt.preventDefault();
-        modalState.classList.toggle("state-open");
-      });
-
-      let dateIn=document.querySelector("[name=date-in]");
-      let dateOut=document.querySelector("[name=date-out]");
-
-      let grownUps=document.querySelector("[name=grown-ups]");
-      let children=document.querySelector("[name=children]");
-
-      let grownUpsPlus=document.querySelector(".find-hotel-group-grown-ups .plus");
-      let grownUpsMunis=document.querySelector(".find-hotel-group-grown-ups .minus")
-
-      grownUpsPlus.addEventListener("click", function (evt) {
-        console.log('+');
-        evt.preventDefault();
-        let grownUpsCounter = grown_ups.getAttribute('value');
-        for( 0 < parseInt(grownUpsCounter) < 50){
-           grown_ups.setAttribute('value', parseInt(grownUpsCounter)+1);
-          }
-        });
-      grownUpsMunis.addEventListener("click", function (evt) {
-        console.log('-');
-        evt.preventDefault();
-        let grownUpsCounter = grown_ups.getAttribute('value');
-        for( 0 < parseInt(grownUpsCounter) < 50){
-           grown_ups.setAttribute('value', parseInt(grownUpsCounter)-1);
-          }
-
-      });
-
-
-      </script>
     </main>
     <footer class="main-footer">
       <div class="tag">
@@ -228,5 +190,6 @@
       </div>
     </footer>
   </div>
+  <script src="./js/scripts.js"></script>
 </body>
 </html>

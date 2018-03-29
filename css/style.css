@@ -222,9 +222,10 @@ body{
 
 .state-open{
   display: block;
+  z-index: 2;
 }
 
-.modal-find input[type="text"] {
+.modal-find input[type="text"]{
   font: inherit;
 }
 
@@ -296,7 +297,7 @@ body{
 
 .modal-find-calendar{
   background-image: url('../img/calendar.svg');
-  background-color: rgb(0,0,0,0);
+  background-color: rgba(0,0,0,0);
   border: none;
   width: 35px;
   height: 35px;
@@ -327,6 +328,26 @@ body{
   align-items: center;
 }
 
+@keyframes outline-modal {
+
+  10%,
+  30%,
+  50%{
+    outline: solid 2px rgb(193,0,32);
+  }
+
+  60%,
+  80%,
+  100%,
+  {
+    outline: none;
+  }
+}
+
+.modal-error {
+  animation: outline-modal 0.6s;
+}
+
 .map{
   background-image: url('../img/map.jpg');
   background-color: rgb(242,242,242);
@@ -336,6 +357,10 @@ body{
   position: relative;
   }
 
+.map-google{
+  position: relative;
+
+}
 /*footer*/
 
 .tag{
@@ -702,7 +727,7 @@ body{
   flex-wrap: wrap;
   padding-bottom: 35px;
   padding-top:35px;
-  max-width: 1200px;
+  width: 1200px;
 }
 
 .main-footer{
@@ -907,6 +932,10 @@ body{
   background-repeat: no-repeat;
   background-position: 0 0;
   color: rgb(106,106,106);
+}
+
+.filter-hotel input[type="checkbox"]:focus + label{
+    outline: rgb(255,255,255) dashed 1px;
 }
 
 .catalog-sort{
