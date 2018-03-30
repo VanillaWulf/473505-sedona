@@ -273,6 +273,7 @@ body{
   vertical-align: middle;
   font-weight: 800;
   cursor: pointer;
+  outline: none;
 }
 
 .plus:hover,
@@ -307,6 +308,7 @@ body{
   right: 0;
   color: black;
   cursor: pointer;
+  outline: none;
 }
 
 .modal-find-calendar:hover,
