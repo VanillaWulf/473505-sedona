@@ -346,6 +346,8 @@ body{
   }
 }
 
+/*анимация автоматически распознается, как #id*/
+
 .modal-error {
   animation: outline-modal 0.6s;
 }
