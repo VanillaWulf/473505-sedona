@@ -351,8 +351,6 @@ body{
   }
 }
 
-/*анимация автоматически распознается, как #id*/
-
 .modal-error {
   border: 2px solid transparent;
   animation: border-modal 0.6s;
