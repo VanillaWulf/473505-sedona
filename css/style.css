@@ -864,6 +864,7 @@ body{
   font: inherit;
   background: none;
   border: none;
+  line-height: normal;
 }
 
 .price-range{
@@ -1109,7 +1110,7 @@ body{
     fill: rgb(129,179,210);
   }
 
-  .find-hotel-group label{
+  .date-label{
     margin-right: 20px;
   }
 
