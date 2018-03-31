@@ -1089,7 +1089,7 @@ body{
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .modal-find-calendar{
-      transform: translateX(-50%);
+      /*transform: translateX(-50%);*/
       top: 0;
   }
 
