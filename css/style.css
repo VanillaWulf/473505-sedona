@@ -170,7 +170,7 @@ body{
 
 .modal input:focus{
   background-color: rgb(255,255,255);
-  outline-color: rgb(229,229,229);
+  outline: rgb(229,229,229) solid 2px ;
 }
 
 .date-input,
@@ -352,6 +352,7 @@ body{
 /*анимация автоматически распознается, как #id*/
 
 .modal-error {
+  outline: 2px solid transparent;
   animation: outline-modal 0.6s;
 }
 
