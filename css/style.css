@@ -336,26 +336,26 @@ body{
   align-items: center;
 }
 
-@keyframes outline-modal {
+@keyframes border-modal {
 
   10%,
   30%,
   50%{
-    outline: solid 2px rgb(193,0,32);
+    border-color: rgb(193,0,32);
   }
 
   60%,
   80%,
   100%{
-    outline: none;
+    border-color: transparent;
   }
 }
 
 /*анимация автоматически распознается, как #id*/
 
 .modal-error {
-  outline: 2px solid transparent;
-  animation: outline-modal 0.6s;
+  border: 2px solid transparent;
+  animation: border-modal 0.6s;
 }
 
 .map{
