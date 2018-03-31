@@ -1086,6 +1086,14 @@ body{
 
 .catalog-item-stars{
   margin-bottom: 40px;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.catalog-item-stars li{
+  margin-left: 3px;
 }
 
 .rating-sum{
