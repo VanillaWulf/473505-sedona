@@ -162,6 +162,8 @@ body{
   border: none;
   background-color: rgb(238,238,238);
   cursor: pointer;
+  border: 2px solid transparent;
+  outline: none;
 }
 
 .modal input:hover{
@@ -170,7 +172,7 @@ body{
 
 .modal input:focus{
   background-color: rgb(255,255,255);
-  outline: rgb(229,229,229) solid 2px ;
+  border-color: rgb(229,229,229);
 }
 
 .date-input,
@@ -459,11 +461,6 @@ body{
   color: rgb(255,255,255);
   background-color: rgba(0,0,0,0);
   cursor: pointer;
-}
-
-.price-value input[name='min-price'],
-.price-value input[name='max-price']{
-  height:15px;
 }
 
 .price-value input:focus,
