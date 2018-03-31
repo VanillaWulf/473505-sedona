@@ -461,6 +461,11 @@ body{
   cursor: pointer;
 }
 
+.price-value input[name='min-price'],
+.price-value input[name='max-price']{
+  height:15px;
+}
+
 .price-value input:focus,
 .price-value input:active{
   border: none;
