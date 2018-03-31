@@ -1093,4 +1093,9 @@ body{
   .modal-find-calendar:focus{
     background-image: url('../img/calendar-hover.svg');
   }
+
+  .modal-find-calendar:active{
+    background-image: url('../img/calendar-active.svg');
+  }
+
 }
