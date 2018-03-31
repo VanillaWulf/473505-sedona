@@ -1114,4 +1114,8 @@ body{
     margin-right: 20px;
   }
 
+  .price-value input {
+    line-height: normal;
+  }
+
 }
