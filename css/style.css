@@ -1043,6 +1043,14 @@ body{
   padding-top:5px;
 }
 
+.catalog-item-image a{
+  display: inline-block;
+}
+
+.catalog-item-image img{
+  vertical-align: middle;
+}
+
 .catalog-item-column-card{
   flex-grow: 1;
   min-width: 300px;
@@ -1115,7 +1123,7 @@ body{
   }
 
   .price-value input {
-    line-height: normal;
+    line-height: 15px;
   }
 
 }
