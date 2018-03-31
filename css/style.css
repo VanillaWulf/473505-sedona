@@ -106,6 +106,10 @@ body{
   font-size: 21px;
 }
 
+.description .feature-name {
+  font-weight: 400;
+}
+
 .feature-content{
   font-weight: 400;
 }
@@ -194,7 +198,7 @@ body{
   text-transform: uppercase;
   border: none;
   width:100%;
-  padding: 15px 195px;
+  padding: 15px 50px;
   cursor: pointer;
 }
 
@@ -340,8 +344,7 @@ body{
 
   60%,
   80%,
-  100%,
-  {
+  100%{
     outline: none;
   }
 }
@@ -398,6 +401,12 @@ body{
   justify-content: center;
   cursor: pointer;
   margin-right: 5px;
+  vertical-align: middle;
+}
+
+.social-link{
+  display: flex;
+  align-items: center;
 }
 
 .social-item:hover,
