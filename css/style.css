@@ -65,7 +65,7 @@ body{
 .catalog-item-title,
 .button-description,
 .button-booking,
-.modal-open{
+.modal-open a{
   text-decoration: none;
 }
 
@@ -135,6 +135,9 @@ body{
 }
 
 .modal-open{
+  width: 570px;
+  box-sizing: border-box;
+  margin: auto;
   font: inherit;
   line-height: 26px;
   font-size: 21px;
@@ -145,6 +148,10 @@ body{
   text-transform: uppercase;
   border: none;
   padding: 30px 140px;
+  }
+
+.modal-open a{
+  color: inherit;
 }
 
 .modal-open:focus,
