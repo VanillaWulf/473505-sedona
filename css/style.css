@@ -16,7 +16,7 @@ body{
   background-size: 1200px 630px;
   background-color: rgb(129,179,210);
   width: 1200px;
-  min-height: 510px;
+  min-height: 505px;
   position: relative;
 }
 
@@ -30,7 +30,7 @@ body{
   background-repeat:no-repeat;
   background-color: rgb(129,179,210);
   width: 1200px;
-  min-height: 215px;
+  min-height: 217px;
 }
 
 .main-image-border{
@@ -64,7 +64,8 @@ body{
 .site-navigation-item a,
 .catalog-item-title,
 .button-description,
-.button-booking{
+.button-booking,
+.modal-open{
   text-decoration: none;
 }
 
@@ -120,8 +121,8 @@ body{
   text-align: center;
   color: rgb(255,255,255);
   width: 400px;
-  padding-top: 50px;
-  padding-bottom: 35px;
+  padding-top: 48px;
+  padding-bottom: 34px;
 }
 
 .feature-two{
@@ -226,9 +227,20 @@ body{
   transform: translateX(50%);
 }
 
+@keyframes form-opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .state-open{
   display: block;
   z-index: 2;
+  animation: form-opacity 1s
 }
 
 .modal-find input[type='text']{
@@ -351,6 +363,8 @@ body{
   }
 }
 
+
+
 .modal-error {
   border: 2px solid transparent;
   animation: border-modal 0.6s;
@@ -394,6 +408,7 @@ body{
 
 .social-item{
   display: inline-block;
+  vertical-align: middle;
   width: 47px;
   height: 47px;
   background-color: rgb(129,179,210);
@@ -426,7 +441,7 @@ body{
 
 .footer-text{
   display: inline-block;
-
+  vertical-align: middle;
 }
 
 /*catalog*/
@@ -475,7 +490,7 @@ body{
   color: rgb(255,255,255);
   text-transform: uppercase;
   border: 2px solid rgb(255,255,255);
-  padding: 5px 33px;
+  padding: 6px 33px;
 }
 
 .filter-show:focus,
@@ -554,7 +569,11 @@ body{
   color: rgb(255,255,255);
   text-align: center;
   vertical-align: middle;
-  padding: 4px 15px;
+  padding: 3px 15px;
+}
+
+.button-booking{
+  padding:3px 15px;
 }
 
 .button-description{
@@ -619,19 +638,25 @@ body{
   flex-wrap: wrap;
   padding: 0px;
   margin: 0;
-  vertical-align: center;
   padding-right: 70px;
   padding-left: 70px;
+  justify-content: space-between;
 }
 
 .site-navigation-item{
-  width:25%;
+  width:23%;
 }
 
 .site-navigation-item:nth-child(3),
 .site-navigation-item:nth-child(4){
   text-align: right;
 }
+
+.site-navigation-item:nth-child(2),
+.site-navigation-item:nth-child(3){
+  flex-grow: 1;
+}
+
 
 .container{
   width: 1200px;
@@ -641,7 +666,7 @@ body{
 }
 
 .main-image{
-  margin-bottom: 60px;
+  margin-bottom: 63px;
   box-sizing: border-box;
 }
 
@@ -653,7 +678,8 @@ body{
 }
 
 .header{
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+  font-weight: 400;
 }
 
 .headers{
@@ -684,12 +710,12 @@ body{
 
 .feature-name{
   margin-top: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .feature-content{
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .feature-list{
@@ -702,14 +728,14 @@ body{
 .fearutes-items{
   width: 400px;
   padding-top: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 34px;
 }
 
 .fearutes-items-ico{
   text-align: center;
   width: 400px;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 63px;
 }
 
 .fearutes-ico{
@@ -768,6 +794,7 @@ body{
   width: 115px;
   height: 40px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .footer-text{
@@ -793,7 +820,7 @@ body{
 .filter-hotel{
   display: flex;
   flex-wrap: wrap;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-left: 72px;
   padding-right: 70px;
 }
@@ -803,14 +830,14 @@ body{
 }
 
 .filter-fieldset{
-  width: 260px;
+  width: 255px;
   margin: 0;
   padding: 0;
 }
 
 .filter-column{
   width: 320px;
-  padding-left: 210px;
+  padding-left: 224px;
   padding-right: 0px;
   padding-top: 0px;
   }
@@ -823,8 +850,8 @@ body{
 
 .price-value{
   position: relative;
-  height: 36px;
-  margin-bottom: 20px;
+  height: 33px;
+  margin-bottom: 22px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -897,6 +924,12 @@ body{
   background: #1c4f80;
 }
 
+.range-toggle:disabled {
+  background: #1c4f80;
+  color:rgb(0,0,0);
+  border-color: rgb(109,109,109);
+}
+
 .range-toggle-min {
   left: 0;
 }
@@ -907,7 +940,7 @@ body{
 
 .filter-legend{
   font-size: 16px;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .filter-button{
@@ -919,7 +952,7 @@ body{
   cursor: pointer;
   position: absolute;
   right: 50%;
-  transform: translateX(50%);
+  transform: translateX(45%);
 }
 
 .filter-option{
@@ -945,10 +978,7 @@ body{
 }
 
 .filter-hotel input[type='checkbox']:disabled + label::before{
-  background-image: url('../img/checkbox-on.svg');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  color: rgb(106,106,106);
+  opacity: 0.3;
 }
 
 .filter-hotel input[type='checkbox']:focus + label{
@@ -1017,10 +1047,11 @@ body{
   display: flex;
   flex-direction: column;
   padding: 0;
+  margin-bottom: 0px;
 }
 
 .catalog-sort-list li{
-  width: 80px;
+  margin-right: 35px;
 }
 
 .catalog-item{
@@ -1029,7 +1060,7 @@ body{
   padding-left: 70px;
   padding-right: 70px;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 .catalog-item:last-child{
@@ -1043,6 +1074,7 @@ body{
 
 .catalog-item-image a{
   display: inline-block;
+  vertical-align: middle;
 }
 
 .catalog-item-image img{
@@ -1061,7 +1093,7 @@ body{
 
 .catalog-item-card h3{
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .catalog-item-card-columns{
@@ -1075,7 +1107,7 @@ body{
   display: flex;
   flex-direction: column;
   width: 110px;
-  padding-right: 5px;
+  padding-right: 7px;
 }
 
 .catalog-item-card-column-2{
