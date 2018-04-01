@@ -135,6 +135,7 @@ body{
 }
 
 .modal-open{
+  display: block;
   width: 570px;
   box-sizing: border-box;
   margin: auto;
@@ -148,11 +149,9 @@ body{
   text-transform: uppercase;
   border: none;
   padding: 30px 140px;
-  }
+  text-decoration: inherit;
 
-.modal-open a{
-  color: inherit;
-}
+  }
 
 .modal-open:focus,
 .modal-open:hover {
@@ -853,6 +852,7 @@ body{
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 16px;
+  letter-spacing: 0.8px;
   }
 
 .price-value{
@@ -886,7 +886,7 @@ body{
 .price-value .min-price,
 .price-value .max-price {
   width: 80px;
-  padding-left: 65px;
+  padding-left: 66px;
 }
 
 .price-value input {
@@ -901,7 +901,7 @@ body{
 
 .price-range{
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .price-range .scale{
@@ -963,7 +963,7 @@ body{
 }
 
 .filter-option{
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .filter-option label::before{
@@ -1016,7 +1016,7 @@ body{
 
 .catalog-sort-column:nth-of-type(2){
   display: flex;
-  width: 855px;
+  width: 857px;
   vertical-align: bottom;
   padding-top: 5px;
 }
@@ -1030,10 +1030,11 @@ body{
   border: none;
   background-color: rgb(255,255,255);
   padding: 0px;
+  vertical-align: bottom;
 }
 
 .sort-up{
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .button-sort:hover{
@@ -1054,7 +1055,7 @@ body{
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin-bottom: 0px;
+  margin-bottom: 3px;
 }
 
 .catalog-sort-list li{
@@ -1067,7 +1068,7 @@ body{
   padding-left: 70px;
   padding-right: 70px;
   padding-top: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 29px;
 }
 
 .catalog-item:last-child{
@@ -1118,7 +1119,7 @@ body{
 }
 
 .catalog-item-card-column-2{
-  width: 140px;
+  width: 145px;
 }
 
 .catalog-item-stars{
@@ -1130,14 +1131,15 @@ body{
 }
 
 .catalog-item-stars li{
-  margin-left: 3px;
+  margin-left: 4px;
 }
 
 .rating-sum{
   font-weight: 400;
   background-color: rgb(229,229,229);
   text-align: center;
-  padding: 5px 7px;
+  padding-top: 3px;
+  padding-bottom: 2px;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
