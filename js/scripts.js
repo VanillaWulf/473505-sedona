@@ -13,7 +13,7 @@ dateOut.classList.remove('modal-error');
 let dateIn = document.querySelector('[name=date-in]');
 let dateOut = document.querySelector('[name=date-out]');
 
-let grownUps = document.querySelector('[name=grown-ups]');
+let grownUps = document.querySelector('[name=grown_ups]');
 let childrenId = document.querySelector('[name=children]');
 
 let grownUpsPlus = document.querySelector('.find-hotel-group-grown-ups .plus');
