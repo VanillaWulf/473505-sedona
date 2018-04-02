@@ -317,6 +317,19 @@ body{
   outline: none;
 }
 
+.minus-ico,
+.plus-ico{
+  font-family: 'PT Sans', 'Arial', sans-serif;;
+}
+
+.minus-ico::before {
+  content: "-";
+}
+
+.plus-ico::before{
+  content: "+";
+}
+
 .plus:hover,
 .minus:hover,
 .plus:focus,
