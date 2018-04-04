@@ -15,7 +15,8 @@ body{
   background-position: center;
   /*background-size: 786px 630px;*/
   background-color: rgb(129,179,210);
-  min-width: 768px;
+  /*min-width: 768px;*/
+  width: 100%;
   min-height: 512px;
   position: relative;
 }
@@ -788,7 +789,7 @@ body{
 .headers{
   margin-bottom: 50px;
   text-align: center;
-  min-width: 400px;
+  min-width: 250px;
   padding-left: 135px;
   padding-right: 135px;
 }
@@ -1364,6 +1365,13 @@ body{
   display: none;
 }
 
+.wide-low-screen{
+  display: block;
+ }
+
+ .lowest-screen{
+   display: none;
+  }
 
 @media (max-width: 840px){
   .low-screen{
@@ -1373,6 +1381,51 @@ body{
   .wide-screen{
     display: none;
   }
+}
+
+@media (max-width: 680px){
+  .main-header-logo{
+  top: auto;
+  bottom: -55%;
+  }
+
+ .container{
+   width: 350px;
+   margin: 0 auto;
+ }
+
+ .site-navigation{
+   flex-direction: column;
+ }
+
+ .site-navigation-item{
+   width: 100%;
+   text-align: center;
+ }
+
+ .site-navigation-item:nth-child(3),
+ .site-navigation-item:nth-child(4){
+   text-align: center;
+ }
+
+ .main-image{
+   width:100%;
+   height: 350px;
+ }
+
+ .wide-low-screen{
+   display: none;
+  }
+
+  .lowest-screen{
+    display: block;
+  }
+ /*разобраться с изображением*/
+
+  .headers{
+  margin: auto;
+   width: 300px;
+ }
 }
 
 
@@ -1391,7 +1444,7 @@ body{
 .main-image{
  background-size: 1200px 630px;
  width: 1200px;
- min-height: 505px;
+ height: 505px;
  }
 
 .main-image-border{
