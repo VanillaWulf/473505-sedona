@@ -13,10 +13,10 @@ body{
 .main-image{
   background-image: url('../img/background_photo-1200.jpg');
   background-position: center;
-  background-size: 1200px 630px;
+  /*background-size: 786px 630px;*/
   background-color: rgb(129,179,210);
-  width: 1200px;
-  min-height: 505px;
+  min-width: 768px;
+  min-height: 512px;
   position: relative;
 }
 
@@ -29,16 +29,18 @@ body{
   background-position: center;
   background-repeat:no-repeat;
   background-color: rgb(129,179,210);
-  width: 1200px;
+  width: 100%;
   min-height: 217px;
 }
 
 .main-image-border{
-  background-image: url('../img/background-white-1200.png');
+  background-image: url('../img/background-white-786.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 35px;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 55px;
 }
 
 .header{
@@ -59,6 +61,7 @@ body{
   line-height: 26px;
   text-align: center;
   font-weight: 400;
+  margin-top: 0px;
 }
 
 .site-navigation-item a,
@@ -120,13 +123,30 @@ body{
   background-color: rgb(129,179,210);
   text-align: center;
   color: rgb(255,255,255);
-  width: 400px;
-  padding-top: 48px;
-  padding-bottom: 34px;
+  width: 33%;
+  padding-top: 47px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  /*padding-top: 45px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.feature-two .description{
+  padding-bottom: 17px;
 }
 
 .feature-two{
   background-color: rgb(238,238,238);
+}
+
+.feature-two p{
+  margin-bottom: 22px;
 }
 
 .modal-find-title p{
@@ -421,8 +441,6 @@ body{
   }
 }
 
-
-
 .modal-error {
   border: 2px solid transparent;
   -webkit-animation: border-modal 0.6s;
@@ -432,7 +450,7 @@ body{
 .map{
   background-image: url('../img/map.jpg');
   background-color: rgb(242,242,242);
-  width: 1200px;
+  width: 100%;
   height: 595px;
   background-repeat: no-repeat;
   position: relative;
@@ -686,12 +704,12 @@ body{
 }
 
 /*Сеточные стили*/
-html,
+/*html,
 body{
   min-width: 1200px;
   min-height: 250px;
 }
-
+*/
 .main-header{
   position: relative;
   padding-top: 15px;
@@ -717,8 +735,8 @@ body{
       flex-wrap: wrap;
   padding: 0px;
   margin: 0;
-  padding-right: 72px;
-  padding-left: 70px;
+  padding-right: 49px;
+  padding-left: 48px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -742,7 +760,7 @@ body{
 
 
 .container{
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   background-color: rgb(255,255,255);
   -webkit-box-shadow:  0 0 15px rgba(0,0,0,0.5);
@@ -750,7 +768,7 @@ body{
 }
 
 .main-image{
-  margin-bottom: 63px;
+  margin-bottom: 55px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -770,9 +788,9 @@ body{
 .headers{
   margin-bottom: 50px;
   text-align: center;
-  min-width: 580px;
-  padding-left: 310px;
-  padding-right: 310px;
+  min-width: 400px;
+  padding-left: 135px;
+  padding-right: 135px;
 }
 
 .first-part-city{
@@ -782,14 +800,14 @@ body{
 }
 
 .first-part-image-city{
-  width: 800px;
+  width: 67%;
   background-image: url('../img/city.jpg');
   background-color: rgb(242,242,242);
   background-position: center;
 }
 
 .first-part-image-mountain{
-  width: 800px;
+  width: 67%;
   background-image: url('../img/mountain.jpg');
   background-color: rgb(242,242,242);
   background-position: center;
@@ -798,6 +816,10 @@ body{
 .feature-name{
   margin-top: 0px;
   margin-bottom: 23px;
+}
+
+.fearutes-items-ico .feature-name {
+  margin-bottom: 24px;
 }
 
 .feature-content{
@@ -816,16 +838,29 @@ body{
 }
 
 .fearutes-items{
-  width: 400px;
-  padding-top: 50px;
-  padding-bottom: 34px;
+  width: 33.333%;
+  padding-top: 47px;
+  padding-bottom: 17px;
+  padding-left: 30px;
+  padding-right: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.feature-two .fearutes-items{
+  padding-left:40px;
+  padding-right: 40px;
 }
 
 .fearutes-items-ico{
   text-align: center;
-  width: 400px;
+  width: 33%;
   padding-top: 60px;
-  padding-bottom: 63px;
+  padding-bottom: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 
 .fearutes-ico{
@@ -864,9 +899,11 @@ body{
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 35px;
-  padding-top:35px;
-  width: 1200px;
+  padding-bottom: 37px;
+  padding-top:37px;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .main-footer{
@@ -877,16 +914,10 @@ body{
   background-color: rgba(255,255,255,0.9);
 }
 
-.tag{
-  width:400px;
-}
-
-.social{
-  width: 400px;
-}
-
+.tag,
+.social,
 .copyrights{
-  width: 400px;
+  width: 33%;
 }
 
 .footer-logo{
@@ -928,9 +959,9 @@ body{
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 25px;
-  padding-left: 72px;
-  padding-right: 70px;
+  padding-top: 27px;
+  padding-left: 47px;
+  padding-right: 40px;
 }
 
 .filter{
@@ -938,17 +969,25 @@ body{
 }
 
 .filter-fieldset{
-  width: 255px;
+  width: 35%;
   margin: 0;
   padding: 0;
 }
 
+.second-fildset{
+  width: 31%;
+}
+
 .filter-column{
-  width: 320px;
-  padding-left: 224px;
+  width: 33%;
   padding-right: 0px;
   padding-top: 0px;
+  padding: 0px;
   }
+
+.filter-range{
+  width: 100%;
+}
 
 .filter-legend-price{
   margin-bottom: 10px;
@@ -960,10 +999,11 @@ body{
 .price-value{
   position: relative;
   height: 33px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  width:100%;
 }
 
 .price-value::after {
@@ -987,11 +1027,17 @@ body{
   cursor: pointer;
 }
 
-.price-value .min-price,
-.price-value .max-price {
-  width: 80px;
-  padding-left: 66px;
+.price-value .min-price {
+    width: 35%;
+    padding-left: 20%;
 }
+
+
+.price-value .max-price {
+    width: 35%;
+    padding-left: 10%;
+}
+
 
 .price-value input {
   width: 50px;
@@ -1052,7 +1098,7 @@ body{
 
 .filter-legend{
   font-size: 16px;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .filter-button{
@@ -1105,8 +1151,8 @@ body{
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 47px;
+  padding-right: 45px;
   margin-bottom: 30px;
 }
 
@@ -1124,14 +1170,14 @@ body{
 }
 
 .catalog-sort-column:nth-of-type(1){
-  width: 165px;
+  width: 24%;
 }
 
 .catalog-sort-column:nth-of-type(2){
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 857px;
+  width:71%;
   vertical-align: bottom;
   padding-top: 5px;
 }
@@ -1189,8 +1235,8 @@ body{
   display: -ms-flexbox;
   display: flex;
   border-top: 1px solid rgb(229,229,229);
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 48px;
+  padding-right: 45px;
   padding-top: 25px;
   padding-bottom: 29px;
 }
@@ -1312,5 +1358,177 @@ body{
   .price-value input {
     line-height: 15px;
   }
+}
+
+.low-screen{
+  display: none;
+}
+
+
+@media (max-width: 840px){
+  .low-screen{
+    display: block;
+  }
+
+  .wide-screen{
+    display: none;
+  }
+}
+
+
+@media (min-width: 1200px){
+ body{
+ width: 1200px;
+ margin: auto;
+}
+ .container{
+   width: 1200px;
+   margin: 0 auto;
+   -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+           box-shadow: 0 0 15px rgba(0,0,0,0.5)
+ }
+
+.main-image{
+ background-size: 1200px 630px;
+ width: 1200px;
+ min-height: 505px;
+ }
+
+.main-image-border{
+ background-image: url('../img/background-white-1200.png');
+ width: 100%;
+ height: 55px;
+ }
+
+ .main-image{
+   margin-bottom: 63px;
+ }
+
+ .site-navigation{
+   padding-right: 72px;
+   padding-left: 70px;
+ }
+
+ .headers{
+   min-width: 580px;
+   padding-left: 310px;
+   padding-right: 310px;
+ }
+
+ .fearutes-items-ico{
+   padding-bottom: 63px;
+   width: 400px;
+ }
+
+ .feature-one .description, .feature-two .description{
+   padding-top: 48px;
+   padding-bottom: 36px;
+   width: 400px;
+  }
+
+  .first-part-image-city {
+    width: 800px;
+  }
+
+  .first-part-image-mountain{
+    width: 800px;
+  }
+
+  .fearutes-items {
+      padding-bottom: 50px;
+  }
+
+  .feature-content{
+    margin-bottom: 22px;
+  }
+
+  .map{
+    background-image: url('../img/map.jpg');
+    background-color: rgb(242,242,242);
+    width: 1200px;
+    height: 595px;
+    background-repeat: no-repeat;
+    position: relative;
+    }
+
+    .filter{
+      width: 1200px;
+      min-height: 217px;
+    }
+
+    .filter-fieldset{
+      width: 255px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .filter-hotel{
+      padding-top: 25px;
+      padding-left: 72px;
+      padding-right: 70px;
+    }
+
+    .filter-column{
+      width: 320px;
+      padding-left: 224px;
+      padding-right: 0px;
+      padding-top: 0px;
+      }
+
+    .filter-legend{
+      margin-bottom: 28px;
+      }
+
+    .price-value .min-price,
+    .price-value .max-price {
+        width: 80px;
+        padding-left: 66px;
+      }
+
+    .price-value{
+        margin-bottom: 22px;
+      }
+
+    .main-footer,
+    .footer-other-page{
+        width: 1200px;
+        padding-bottom: 37px;
+        padding-top:37px;
+    }
+
+    .feature-two .fearutes-items{
+      padding-right:60px;
+      padding-left: 60px;
+      padding-bottom: 35px;
+    }
+
+    .header{
+      margin-bottom: 27px;
+    }
+
+    .fearutes-items-ico .feature-name {
+      margin-bottom: 23px;
+    }
+
+    .catalog-sort-column:nth-of-type(1){
+      width: 165px;
+    }
+
+    .catalog-sort-column:nth-of-type(2){
+      width: 857px;
+    }
+
+    .catalog-sort{
+      padding-left: 70px;
+      padding-right: 70px;
+      margin-bottom: 30px;
+    }
+
+    .catalog-item{
+      padding-left: 70px;
+      padding-right: 70px;
+      padding-top: 25px;
+      padding-bottom: 29px;
+    }
 
 }
