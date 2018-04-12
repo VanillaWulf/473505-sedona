@@ -1373,7 +1373,7 @@ body{
    display: none;
   }
 
-@media (max-width: 840px){
+@media screen and (max-width: 840px){
   .low-screen{
     display: block;
   }
@@ -1383,7 +1383,7 @@ body{
   }
 }
 
-@media (max-width: 680px){
+@media screen and (max-width: 680px){
   .main-header-logo{
   top: auto;
   bottom: -61%;
@@ -1400,7 +1400,10 @@ body{
  }
 
  .site-navigation{
-   flex-direction: column;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
  }
 
  .site-navigation-item{
@@ -1442,7 +1445,10 @@ body{
 
 .first-part-city,
 .first-part-mountain{
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .feature-content{
@@ -1473,7 +1479,10 @@ body{
  }
 
  .feature-list{
-   flex-direction: column;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
  }
 
 .fearutes-items-ico{
@@ -1482,8 +1491,12 @@ body{
   padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center
 }
 
 .feature-content{
@@ -1553,7 +1566,10 @@ body{
 .main-footer,
 .footer-other-page{
   width: 320px;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding-bottom: 20px;
   padding-top: 20px;
 }
@@ -1573,7 +1589,9 @@ body{
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 70px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .filter-legend{
@@ -1623,7 +1641,10 @@ body{
 }
 
 .catalog-item{
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
@@ -1645,8 +1666,7 @@ body{
 
 }
 
-
-@media (min-width: 1200px){
+@media screen and (min-width: 1200px){
  body{
  width: 1200px;
  margin: auto;
